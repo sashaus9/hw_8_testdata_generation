@@ -27,7 +27,7 @@ public class TestDataGenerator {
     public static String hobby = faker.options().option("Reading", "Sports", "Music");
     public static String subject = faker.options().option("Accounting", "Maths", "Arts", "English", "Physics", "Chemistry", "Computer Science",
             "Economics", "Social Studies", "History", "Civics", "Commerce", "Hindi", "Biology");
-    public static String photo = faker.options().option("images/photo1.jpeg", "images/photo2.jpeg");
+    public static String photo = faker.options().option("photo1.jpeg", "photo2.jpeg");
     public static String state = faker.options().option(statesAndCitiesMap.keySet().toArray()).toString();
     public static String city = faker.options().option(statesAndCitiesMap.get(state));
 }
