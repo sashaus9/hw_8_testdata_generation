@@ -17,7 +17,7 @@ public class TestDataGenerator {
     public static String lastName = faker.name().lastName();
     public static String userEmail = faker.internet().emailAddress();
     public static String currentAddress = faker.address().fullAddress();
-    public static String mobilePhone = faker.numerify("89#########");
+    public static String mobilePhone = 8 + faker.phoneNumber().subscriberNumber(9);
 
     public static String gender = faker.options().option("Male", "Female", "Other");
     public static String month = faker.options().option("January", "February", "March", "April", "May", "June",
@@ -27,7 +27,7 @@ public class TestDataGenerator {
     public static String hobby = faker.options().option("Reading", "Sports", "Music");
     public static String subject = faker.options().option("Accounting", "Maths", "Arts", "English", "Physics", "Chemistry", "Computer Science",
             "Economics", "Social Studies", "History", "Civics", "Commerce", "Hindi", "Biology");
-    public static String photo = faker.options().option("photo1.jpeg", "photo2.jpeg");
+    public static String photo = faker.options().option("photo1.jpeg", "photo2.png");
     public static String state = faker.options().option(statesAndCitiesMap.keySet().toArray()).toString();
     public static String city = faker.options().option(statesAndCitiesMap.get(state));
 }
